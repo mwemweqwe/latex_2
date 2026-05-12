@@ -1,0 +1,44 @@
+\documentclass[12pt]{article}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[english,russian]{babel}
+\usepackage[left=2.5cm, right=2cm, top=2cm, bottom=2cm]{geometry}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+\begin{document}
+
+\noindent\hspace*{-0.5cm}{\Large\bfseries Вариант 3}
+
+\bigskip
+
+Графы \((G(U(t), E(t), Q(t))_{R^*})_i\), \(i = 1, \dots, 3\), формируются по следующим правилам.
+
+\bigskip
+
+1. Построить матрицы \(\|D_a^{R_1}\| = \|d_{aa}^{R_1}\|\), \(\|D_b^{R_2}\| = \|d_{bb}^{R_2}\|\), \(\|D_c^{R_3}\| = \|d_{cc}^{R_3}\|\) таким образом, чтобы
+\[
+d_{ij}^{R^k} =
+\begin{cases}
+1, & \text{если } S_i R_k S_j, \, S_i, S_j \in B_1; \, k = 1, \dots, 3; \\
+0, & \text{если } S_i R_k S_j, \, S_i, S_j \in B_1, \, \text{не выполняется},
+\end{cases}
+\tag{1}
+\]
+где \(a, b, c\) "--- известные константы.
+
+\bigskip
+
+2. Из оставшихся элементов \(\{S\}_{1}^{R_j}\), \(j = 1, \dots, 3\), каждой матрицы построить квадратные матрицы \(\|E_{R_j}\|_j = \|e_{R_j R_j}\|_j\), \(j = 1, \dots, 3\) таким образом, чтобы
+\[
+e_{iv} =
+\begin{cases}
+1, & \text{если } S_i R_j S_v, \, j = 1, \dots, 3, \\
+0, & \text{в остальных случаях}.
+\end{cases}
+\tag{2}
+\]
+
+\end{document}
